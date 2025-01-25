@@ -1,0 +1,40 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+}
+#main {
+    cursor: pointer;
+    font-size: 10em; /* Increased font size */
+    color: #00bcd4;
+}
+#quiz {
+    display: none;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.option {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+#hint {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
