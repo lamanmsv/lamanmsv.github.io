@@ -37,4 +37,9 @@ body {
     margin-top: 20px;
     font-size: 1.2em;
     color: #333;
+}.option {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 20px; /* Make buttons more oval */
 }
