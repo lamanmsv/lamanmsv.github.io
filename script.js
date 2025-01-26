@@ -30,4 +30,32 @@ function checkAnswer(selectedIndex) {
         alert('Wrong! Try again.');
     }
     loadQuiz();
+}function checkAnswer(selectedIndex) {
+    if (selectedIndex === correctAnswerIndex) {
+        displayYesSign(); // Display "yes" sign on correct answer
+    } else {
+        alert('Wrong! Try again.');
+    }
+    loadQuiz();
+}
+
+function displayYesSign() {
+    const yesSign = document.createElement('div');
+    yesSign.textContent = 'YES!';
+    yesSign.style.position = 'absolute';
+    yesSign.style.top = '50%';
+    yesSign.style.left = '50%';
+    yesSign.style.transform = 'translate(-50%, -50%)';
+    yesSign.style.fontSize = '3em';
+    yesSign.style.color = 'green';
+    yesSign.style.animation = 'fadeInOut 2s forwards';
+    document.body.appendChild(yesSign);
+    setTimeout(() => yesSign.remove(), 2000);
+}
+
+// Add keyframes for fadeInOut animation in styles.css
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
 }
