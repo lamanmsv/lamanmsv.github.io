@@ -12,7 +12,7 @@ body {
 }
 #main {
     cursor: pointer;
-    font-size: 10em; /* Increased font size */
+    font-size: 10em; 
     color: #00bcd4;
 }
 #quiz {
@@ -41,9 +41,15 @@ body {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    border-radius: 20px; /* Make buttons more oval */
+    border-radius: 20px; 
 }
-/* Add this at the end of the file */
+#visitor-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    color: #333;
+}
 #visitor-counter {
     position: absolute;
     top: 10px;
