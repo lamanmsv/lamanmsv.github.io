@@ -59,3 +59,9 @@ function displayYesSign() {
     50% { opacity: 1; }
     100% { opacity: 0; }
 }
+function startGame() {
+    document.body.style.backgroundColor = shadesOfCyan[Math.floor(Math.random() * shadesOfCyan.length)];
+    document.getElementById('main').style.display = 'none';
+    document.getElementById('quiz').style.display = 'block';
+    loadQuiz();
+}
